@@ -29,7 +29,7 @@ Both services are on the same Docker network (**app-net**). The Flask app connec
    - Configured with:
      - `MYSQL_ROOT_PASSWORD=example`
      - `MYSQL_DATABASE=mydb`
-   - Mounted volume: `/var/lib/mysql` → `db-data`
+   - Mounted volume: `/var/lib/mysql`->`db-data`
    - Healthcheck ensures the database is ready before `web` starts
 
 2. **web (Flask App)**
